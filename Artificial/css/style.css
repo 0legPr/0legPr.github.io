@@ -189,6 +189,10 @@ body {
 .header {
   padding: 24px 0;
   color: white;
+  position: sticky;
+  top: 0;
+  background: #09111e;
+  z-index: 2;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -275,7 +279,7 @@ body {
 }
 @media (max-width: 450px) {
   .header__nav-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: #020a18;
