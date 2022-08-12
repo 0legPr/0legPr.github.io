@@ -1,0 +1,15 @@
+@import 'null';
+@import 'vars';
+@import 'components';
+@import 'style';
+
+body {
+   font-family: $f_base;
+   color: $black;
+}
+.container {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 0 10px;
+   box-sizing: border-box;
+}
