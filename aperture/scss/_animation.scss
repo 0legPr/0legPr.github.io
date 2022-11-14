@@ -1,0 +1,114 @@
+.about-us {
+   &-title {
+      opacity: 0;
+      transition: 0.7s;
+      &.active {
+         opacity: 1;
+      }
+   }
+   &__wrapper {
+      transform: scale(0.8);
+      transition: 1s;
+      opacity: 0;
+      &.active {
+         opacity: 1;
+      }
+   }
+} 
+
+.photo-block {
+   transition: 0.5s;
+   overflow: hidden;
+   &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      transition: 0.5s;
+   }
+   &.active {
+      .content {
+         opacity: 1;
+         transform: translateX(0) scale(1);
+      }
+      &:after {
+         opacity: 0;
+      }
+   }
+   .content {
+      transition: opacity 1s, transform 0.5s;
+      opacity: 0;
+      transform: translateX(200%) scale(0.5);
+      z-index: 2;
+   }
+}
+
+.photo-text-block {
+   &.active {
+      .photo-text-block__bg {
+         opacity: 1;
+      }
+      .photo-text-block__wrapper {
+         transform: translateX(0) scale(1);
+         opacity: 1;
+      }
+   }
+   &__bg {
+      opacity: 0;
+      transition: 0.5s;
+   }
+   &__wrapper {
+      transform: translateX(-100%) scale(0.5);
+      opacity: 0;
+      transition: opacity 1s, transform 0.5s;
+   }
+}
+.clients {
+   .block-title {
+      transform: scale(0.9);
+      opacity: 0;
+      transition: 0.5s;
+      &.active {
+         opacity: 1;
+      }
+   }
+   &__item {
+      opacity: 0;
+      transition: 1s;
+      &.active {
+         opacity: 1;
+      }
+   }
+}
+.help {
+   .block-title {
+      transform: scale(0.9);
+      opacity: 0;
+      transition: 0.5s;
+      &.active {
+         opacity: 1;
+      }
+   }
+}
+.footer {
+   &__wrapper {
+      opacity: 0;
+      transition: 0.5s;
+      &.active {
+         opacity: 1;
+      }
+   }
+}
+
+.meta {
+   opacity: 0;
+   transition: 1s;
+   transform: translateY(400%);
+   &.active {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}

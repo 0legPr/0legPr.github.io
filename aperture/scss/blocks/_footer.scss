@@ -1,0 +1,60 @@
+.footer {
+   background: $bg;
+   padding: 90px 0;
+   p {
+      color: $gray;
+      font-size: 13px;
+      margin-top: 10px;
+   }
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #c0c0c06e;
+      padding: 30px 0;
+      @media (max-width: 500px) {
+         flex-direction: column;
+         text-align: center;
+         row-gap: 30px;
+      }
+      &:last-child {
+         border-bottom: 0;
+         padding-bottom: 0;
+      }
+      &:first-child {
+         margin-top: 0;
+      }
+   }
+   &__nav {
+      display: flex;
+      column-gap: 15px;
+      p {
+         color: $gray;
+         letter-spacing: 2px;
+         text-transform: uppercase;
+      }
+      li {
+         margin: 10px 0;
+         cursor: pointer;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+   h3 {
+      letter-spacing: 2px;
+      font-size: 15px;
+      text-transform: uppercase;
+   }
+   .inc {
+      font-size: 12px;
+      span {
+         font-size: 11px;
+      }
+   }
+   &__soc {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+   }
+}
