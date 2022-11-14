@@ -130,6 +130,15 @@ body {
   border-radius: 14px;
   cursor: pointer;
   font-size: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: inline-block;
+}
+.btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 20px -3px white;
+          box-shadow: 0px 0px 20px -3px white;
 }
 
 .meta {
@@ -826,11 +835,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 80px;
-  overflow-x: scroll;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
   padding-bottom: 30px;
+}
+@media (max-width: 850px) {
+  .clients__wrapper {
+    overflow-x: scroll;
+  }
 }
 
 .help {
