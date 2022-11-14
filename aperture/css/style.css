@@ -108,9 +108,19 @@ body {
   font-size: 40px;
   margin-bottom: 15px;
 }
+@media (max-width: 415px) {
+  .block-title h3 {
+    font-size: 35px;
+  }
+}
 .block-title p {
   font-size: 32px;
   color: #C0C0C0;
+}
+@media (max-width: 415px) {
+  .block-title p {
+    font-size: 20px;
+  }
 }
 
 .btn {
@@ -258,6 +268,13 @@ body {
 }
 .photo-text-block__wrapper p {
   margin-bottom: 40px;
+  max-height: 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.photo-text-block__wrapper p.active {
+  max-height: 300px;
 }
 
 .popab {
@@ -703,6 +720,11 @@ body {
   max-width: 580px;
   margin: 0 auto;
   margin-bottom: 70px;
+}
+@media (max-width: 415px) {
+  .hero__wrapper {
+    margin-bottom: 150px;
+  }
 }
 .hero h3 {
   line-height: 20px;

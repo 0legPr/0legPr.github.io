@@ -2,6 +2,26 @@ $('.about-us-btn-popab').click(function (e) {
    e.preventDefault();
    $(this).parent().parent().toggleClass('active');
    $(this).prev().toggleClass('active');
+   if ( $(this).prev().hasClass('active') ) {
+      $(this).text('Close');
+   }else {
+      $(this).text('Read more');
+   }
+});
+
+$('.photo-text-block-btn').click(function (e) {
+   e.preventDefault();
+   $(this).prev().toggleClass('active');
+   if ( $(this).prev().hasClass('active') ) {
+      $(this).text('Close');
+   }else {
+      $(this).text('Check it out');
+   }
+});
+
+$('.help-popab-btn').click(function (e) {
+   e.preventDefault();
+   $(this).next().toggleClass('active');
 });
 
 // burger 

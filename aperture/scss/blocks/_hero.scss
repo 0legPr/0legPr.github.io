@@ -24,6 +24,9 @@
       max-width: 580px;
       margin: 0 auto;
       margin-bottom: 70px;
+      @media (max-width: $iphone) {
+         margin-bottom: 150px;
+      }
    }
    h3 {
       line-height: 20px;

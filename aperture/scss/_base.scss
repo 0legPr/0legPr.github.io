@@ -15,10 +15,16 @@ body {
    h3 {
       font-size: 40px;
       margin-bottom: 15px;
+      @media (max-width: $iphone) {
+         font-size: 35px;
+      }
    }
    p {
       font-size: 32px;
       color: $gray;
+      @media (max-width: $iphone) {
+         font-size: 20px;
+      }
    }
    padding-top: 120px;
    padding-bottom: 40px;
@@ -122,6 +128,12 @@ body {
       }
       p {
          margin-bottom: 40px;
+         max-height: 35px;
+         transition: 0.5s;
+         overflow: hidden;
+         &.active {
+            max-height: 300px;
+         }
       }
    }
 }
