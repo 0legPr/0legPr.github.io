@@ -3,9 +3,14 @@
    border-radius: 64px;
    display: inline-block;
    font-size: 15px;
+   transition: 0.3s;
    &.border {
       color: $black;
       border: 2px solid $black;
+      &:hover {
+         background: $black;
+         color: white;
+      }
    }
    &.black {
       color: white;

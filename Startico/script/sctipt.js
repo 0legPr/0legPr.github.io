@@ -22,4 +22,4 @@ function alert_fun() {
 
 alert_close.onclick = alert_fun;
 
-setTimeout(alert_fun, 3000);
+setTimeout(alert_fun, 5000);

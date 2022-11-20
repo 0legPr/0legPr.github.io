@@ -6,6 +6,7 @@
 body {
    font-family: $f_base;
    color: $black;
+   overflow-x: hidden;
 }
 .container {
    max-width: 1280px;
