@@ -10,13 +10,15 @@
    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet"> 
    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
+   <link rel="stylesheet" href="css/animate.css">
+
    <link rel="stylesheet" href="css/main.css">
 
    <title>Startico</title>
 </head>
 <body>
    
-   <header class="header">
+   <header class="header wow fadeInDown" data-wow-duration="1s">
       <div class="alert">
          <div class="container">
             Explore all our services. <span class="alert-close">✖</span>
@@ -47,7 +49,7 @@
 
    <section class="hero">
       <div class="container">
-         <div class="hero__wrapper">
+         <div class="hero__wrapper wow fadeIn" data-wow-duration="2s">
             <h1>Head start your business today!</h1>
             <p>Consectetur adipiscing elit. Integer sagittis quam magna, quis sollicitudin lorem ornare ut. Nulla et scelerisque mauris.</p>
             <div class="hero__btn">
@@ -55,7 +57,7 @@
                <a href="#" class="btn bold">Try for free ❯</a>
             </div>
          </div>
-         <div class="hero__watch">
+         <div class="hero__watch wow fadeIn" data-wow-delay="1s">
             <div class="img">
                <img src="img/hero/img.png" alt="">
             </div>
@@ -63,8 +65,8 @@
          </div>
 
          <div class="hero__decor">
-            <img src="img/hero/decor_1.svg" alt="">
-            <img src="img/hero/decor_2.svg" alt="">
+            <img src="img/hero/decor_1.svg" alt="" class="wow fadeInLeft" data-wow-delay="1s">
+            <img src="img/hero/decor_2.svg" alt="" class="wow fadeInRight" data-wow-delay="1s">
          </div>
       </div>
    </section>
@@ -72,9 +74,9 @@
    <section class="speed">
       <div class="container">
          <div class="speed__wrapper">
-            <div class="speed__img">
+            <div class="speed__img wow slideInLeft fadeIn" data-wow-duration="1s">
                <div class="bg"><img src="img/speed/IMAGE.jpg" alt="" class=""></div>
-               <div class="img-point">
+               <div class="img-point wow fadeIn" data-wow-delay="1s">
                   <div class="content">
                      <h3>86%</h3>
                      <p>Increased in sales</p>
@@ -82,7 +84,7 @@
                   <div class="img"><img src="img/speed/icon.svg" alt=""></div>
                </div>
             </div>
-            <div class="speed__content">
+            <div class="speed__content wow fadeIn" data-wow-delay="0.5s">
                <div class="point">Speed</div>
                <h3 class="block-title">Faster than ever before</h3>
                <p class="block-text">Morbi tristique cursus diam, at viverra felis malesuada eu. Duis iaculis velit ac urna fermentum interdum. Ut auctor vitae nisi eget varius. Phasellus rutrum pellentesque lectus pulvinar dapibus aenean dui justro, tempus sed oido.</p>
@@ -98,12 +100,12 @@
    <section class="benefits">
       <div class="container">
          <div class="benefits__wrapper">
-            <div class="title">
+            <div class="title wow fadeIn">
                <h3 class="block-title">Building your very own Startup has never been simpler</h3>
                <p class="block-text">Aenean dui justo, tempus sed odio ut, convallis accumsan nunc. Phasellus mauris sem, porta eu turpis vel, maximus condimentum turpis.
                </p>
             </div>
-            <div class="benefits__card-wrapper">
+            <div class="benefits__card-wrapper wow fadeInUp" data-wow-delay="0.5s">
                <div class="benefits__card">
                   <div class="icon"><img src="img/benefits/icon-1.png" alt=""></div>
                   <h3>Better results</h3>
@@ -120,7 +122,7 @@
                   <p>Donec tincidunt est pellentesque, ullamcorper quam sed, aliquam eros. Proin finibus luctus nisi.</p>
                </div>
             </div>
-            <div class="block-btn">
+            <div class="block-btn wow fadeIn" data-wow-delay="1s">
                <a href="#" class="btn border">Get started</a>
                <a href="#" class="btn">Try for free ❯</a>
             </div>
@@ -131,7 +133,7 @@
    <section class="efficient">
       <div class="container">
          <div class="efficient__wrapper">
-            <div class="efficient__content">
+            <div class="efficient__content wow fadeIn" data-wow-delay="0.5s">
                <div class="point">Efficient</div>
                <h3 class="block-title">Straight to the point</h3>
                <p class="block-text">Vivamus ante dolor, condimentum eget dignissim vitae, malesuada sed urna. Aenean consequat risus tortor, quis porta.</p>
@@ -152,9 +154,9 @@
                   <a href="#" class="btn">Try for free ❯</a>
                </div>
             </div>
-            <div class="efficient__bg">
+            <div class="efficient__bg wow slideInRight fadeIn" data-wow-duration="1s">
                <img src="img/Efficient/bg.jpg" alt="">
-               <div class="img-point">
+               <div class="img-point  wow fadeIn" data-wow-delay="1s">
                   <div class="content">
                      <h3>74%</h3>
                      <p>Increased in productivity</p>
@@ -169,11 +171,11 @@
    <section class="review">
       <div class="container">
          <div class="review__wrapper">
-            <div class="review__content">
+            <div class="review__content wow fadeIn">
                <h3 class="block-title">A words from our customers</h3>
                <p class="block-text">Eu turpis vel, maximus condimentum turpis faucibus dictum accumsan.</p>
             </div>
-            <div class="review__card-wrapper">
+            <div class="review__card-wrapper wow fadeInUp" data-wow-delay="1s">
                <div class="review__card">
                   <div class="review__card-box">
                      <div class="star">
@@ -296,14 +298,14 @@
    <section class="price">
       <div class="container">
          <div class="price__wrapper">
-            <div class="price__content">
+            <div class="price__content wow fadeIn">
                <div class="point">Pricing</div>
                <h3 class="block-title">Pricing plans</h3>
                <p class="block-text">Suspendisse mattis porttitor gravida et malesuada fames.</p>
             </div> 
 
             <div class="price__card-wrapper">
-               <div class="price__card">
+               <div class="price__card wow fadeInLeft">
                   <div class="box">
                      <div class="plan">
                         <p class="title">Basic plan</p>
@@ -320,7 +322,7 @@
                      <div class="btn-wrapper"><a href="#" class="btn bold green">Get started</a></div>
                   </div>
                </div>
-               <div class="price__card main">
+               <div class="price__card main wow fadeIn">
                   <div class="box">
                      <div class="plan">
                         <p class="title">Basic plan</p>
@@ -337,7 +339,7 @@
                      <div class="btn-wrapper"><a href="#" class="btn bold black">Get started</a></div>
                   </div>
                </div>
-               <div class="price__card">
+               <div class="price__card wow fadeInRight">
                   <div class="box">
                      <div class="plan">
                         <p class="title">Basic plan</p>
@@ -363,12 +365,12 @@
    <section class="blog">
       <div class="container">
          <div class="blog__wrapper">
-            <div class="blog__content">
+            <div class="blog__content wow fadeIn">
                <div class="point">Blog</div>
                <h3 class="block-title">Our latest blogs</h3>
                <p class="block-text">Accumsan semper euismod dolor vitae metus.</p>
             </div>
-            <div class="blog__card-wrapper">
+            <div class="blog__card-wrapper wow fadeIn" data-wow-delay="1s">
                <div class="blog__card">
                   <div class="img">
                      <img src="img/blog/IMAGE.jpg" alt="">
@@ -440,7 +442,7 @@
       </div>
    </section>
 
-   <section class="form">
+   <section class="form wow headShake">
       <div class="container">
          <div class="form__wrapper">
             <div class="form__content">
@@ -456,7 +458,7 @@
       </div>
    </section>
 
-   <section class="footer">
+   <section class="footer wow fadeIn">
       <div class="container">
          <div class="footer__wrapper">
             <div class="footer__logo">
@@ -486,6 +488,10 @@
       </div>
    </section>
 
+   <script src="script/wow.min.js"></script>
+   <script>
+   new WOW().init();
+   </script>
    <script src="script/sctipt.js"></script>
 
 </body>
