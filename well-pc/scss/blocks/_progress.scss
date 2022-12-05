@@ -1,0 +1,96 @@
+.progress {
+   @import 'block-padding';
+   &__wrapper {
+      display: flex;
+      @media (max-width: $iphone) {
+         flex-direction: column;
+      }
+   }
+   &__item {
+      flex: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media (max-width: $iphone) {
+         position: relative;
+         padding-right: 110px;
+      }
+      &:nth-child(even) {
+         .line {
+            background: linear-gradient(94.26deg, #7C6AFA 9.51%, #C89AFC 90.23%);
+            @media (max-width: $iphone) {
+               background: linear-gradient(0, #7C6AFA 9.51%, #C89AFC 90.23%);
+            }
+         }
+      }
+      &:nth-child(1n) {
+         .line {
+            height: 80px;
+            @media (max-width: $iphone) {
+               width: 100px;
+               height: 100%;
+            }
+         }
+      }
+      &:nth-child(2n) {
+         .line {
+            height: 60px;
+            @media (max-width: $iphone) {
+               width: 60px;
+               height: 100%;
+               right: 20px;
+            }
+         }
+      }
+      &:nth-child(3n) {
+         .line {
+            height: 30px;
+            @media (max-width: $iphone) {
+               width: 30px;
+               height: 100%;
+               right: 35px;
+            }
+         }
+      }
+      &:nth-child(4n) {
+         .line {
+            height: 10px;
+            @media (max-width: $iphone) {
+               width: 10px;
+               height: 100%;
+               right: 45px;
+            }
+         }
+      }
+      h3 {
+         font-size: 36px;
+         font-weight: 700;
+         margin-bottom: 20px;
+         @media (max-width: $iphone) {
+            margin: 20px 0;
+         }
+      }
+      .line {
+         width: 100%;
+         background: $gradient_viotet;
+         margin-bottom: 20px;
+         @media (max-width: $iphone) {
+            order: 3;
+            height: 100%;
+            width: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(0, #C89AFC 9.51%, #7C6AFA 90.23%);
+         }
+      }
+      p {
+         font-size: 14px;
+         opacity: 50%;
+         padding-right: 30px;
+         @media (max-width: $iphone) {
+            padding-right: 0;
+         }
+      }
+   }
+}

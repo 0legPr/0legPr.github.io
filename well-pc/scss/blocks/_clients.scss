@@ -1,0 +1,19 @@
+.clients {
+   @import 'block-padding';
+   &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      @media (max-width: $iphone) {
+         flex-wrap: nowrap;
+         overflow-x: scroll;
+      }
+   }
+   &__item {
+      flex: 25%;
+      padding: 30px;
+      outline: 1px solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      justify-content: center;
+   }
+}

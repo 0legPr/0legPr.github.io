@@ -1,0 +1,6 @@
+& {
+   padding-bottom: $block-padding;
+   @media (max-width: $iphone) {
+      padding-bottom: $block-padding-m;
+   }
+}

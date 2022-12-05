@@ -1,0 +1,162 @@
+.hide {
+   opacity: 0;
+   transition: 0.5s;
+   &.active {
+      opacity: 1;
+   }
+}
+
+.info {
+   &__wrapper {
+      opacity: 0;
+      transition: 0.5s;
+      &.active {
+         opacity: 1;
+      }
+   }
+   .line__active {
+      width: 0 !important;
+      transition: 0.5s;
+      &.active {
+         width: 70% !important;
+      }
+   }
+}
+
+.about-us {
+   &__wrapper {
+      opacity: 0;
+      transition: 0.3s;
+      &.active {
+         opacity: 1;
+         .about-us__bg {
+            transform: scale(1);
+         }
+         .about-us__content {
+            transform: translateY(0);
+         }
+      }
+   }
+   &__bg {
+      transform: scale(0.5);
+      transition: 0.3s;
+   }
+   &__content {
+      transition: 1s;
+      transform: translateY(200px);
+   }
+}
+.progress {
+   opacity: 0;
+   transition: 0.5s;
+   &.active {
+      opacity: 1;
+   }
+   &__item {
+      opacity: 0;
+      transition: 0.3s;
+      &.active {
+         opacity: 1;
+      }
+   }
+   .block-title {
+      transition: 0.5s;
+      p {
+         transition: 2s;
+         opacity: 0;
+      }
+      &.active {
+         p {
+            opacity: 50%;
+         }
+         h3 {
+            &::before {
+               animation: circle 1s ease;
+            }
+         }
+      }
+   }
+}
+.benefits {
+   &__item {
+      opacity: 0;
+      transition: 0.3s;
+      &.active {
+         opacity: 1;
+      }
+   }
+}
+
+.clients {
+   &__wrapper {
+      transform: translateY(40%);
+      transition: 0.5s;
+      &.active {
+         transform: translateY(0);
+      }
+   }
+   .block-title {
+      transition: 0.5s;
+      p {
+         transition: 2s;
+         opacity: 0;
+      }
+      &.active {
+         p {
+            opacity: 50%;
+         }
+         h3 {
+            &::before {
+               animation: circle 1s ease;
+            }
+         }
+      }
+   }
+}
+
+.time-line {
+   &__item {
+      opacity: 0;
+      transition: 0.3s;
+      &.active {
+         opacity: 1;
+      }
+   }
+   &__line {
+      height: 0 !important;
+      transition: 0.3s;  
+      &.active {
+         height: 100% !important;
+      }
+   }
+}
+
+.teachers {
+   &__item {
+      opacity: 0;
+      transition: 0.3s;
+      &.active {
+         opacity: 1;
+      }
+   }
+}
+
+.subscribe {
+   transform: translateY(100px);
+   &.active {
+      transform: translateY(0);
+   }
+   &__form {
+      opacity: 0;
+      transition: 1s;
+      &.active {
+         opacity: 1;
+      }
+   }
+}
+.footer {
+   transform: translateY(100px);
+   &.active {
+      transform: translateY(0);
+   }
+}
