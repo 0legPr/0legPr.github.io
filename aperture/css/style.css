@@ -714,7 +714,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 1500px;
+  width: 100%;
   z-index: -1;
   -webkit-transition: 0.4s;
   transition: 0.4s;
